@@ -23,9 +23,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # List contents of the directory
-      - name: List contents
-        run: ls
+      # List contents of the root directory to debug structure
+      - name: List root directory contents
+        run: ls -R
 
       # Compile classes to test
       - name: Compile classes
